@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/696b699b7a.js" crossorigin="anonymous"></script>
+    <title>Proyecto Final</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <style>
+        body{
+        font-family: 'Roboto', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="logoContainer">
+                <h1>MI<span>LOGO</span></h1>
+            </div>
+            <ul class="nav">
+                <a href="index.html"><li>Home</li></a>
+                <a href="sobrenosotros.html"><li>Sobre Nosotros</li></a>
+                <a href="roadmap.html"><li>Roadmap</li></a>
+                <a href="negocio.html"><li>Negocio</li></a>
+                <a href="contacto.html"><li>Contacto</li></a>
+            </ul>
+    </header>
+
+    <main id="contacto">
+        <div class="tituloContacto">
+            <h1>Contacto</h1><br>
+        </div>
+        <div class="formContainer">
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <label for="Nombre"></label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+                <label for="Correo"></label>
+                <input type="text" name="Correo" id="Correo" placeholder="Correo" required>
+                <label for="Asunto"></label>
+                <input type="text" name="Asunto" id="Asunto" placeholder="Asunto" required>
+                <label for="Comentarios"></label>
+                <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea> 
+                <input type="submit">
+                <input type="reset"> 
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyContainer">
+            <h3>Made by Santiago Borzone</h3></div>
+        <div class="redes">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+</body>
+</html>
