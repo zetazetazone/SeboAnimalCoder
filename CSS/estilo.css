@@ -92,7 +92,6 @@ footer{
 .copyContainer h3{
     color: white;
     height: 100%;
-
     vertical-align: middle;
     font-size: 16px;
     font-family: 'Roboto';
@@ -185,11 +184,34 @@ body{
     position: relative;
 }
 
-video{
+/* video{
     top: 0;
     left: 0;
     position:relative;
     object-fit: cover;
+} */
+
+.videoContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    overflow: hidden;
+    height: 100%;
+}
+.videoContainer video{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width:1300px){
+    .videoContainer video{
+        min-height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .titulo{
@@ -206,6 +228,14 @@ video{
     font-size: x-large;
     color: darkred;
 }
+
+@media only screen and (max-width:390px){
+    
+}
+
+/* Sobre Nosotros */
+/* Sobre Nosotros */
+/* Sobre Nosotros */
 
 #sobrenosotros{
     padding: 30px;
@@ -254,7 +284,6 @@ video{
 /* ul.slider{
     position: relative;
     width: 500px;
-
 }
 
 ul.slider li{
