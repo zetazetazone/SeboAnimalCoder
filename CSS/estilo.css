@@ -313,8 +313,35 @@ ul.slider li{
 /* Negocio */
 /* Negocio */
 
-.imgAndTextContainer{
+.NegContainer{
     display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 888px){
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .imgBox{
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+    }
+    .content{
+        display: flex;
+        padding: 0px 40px 20px 40px;
+    }
 }
 
 /* Contacto */
