@@ -308,7 +308,32 @@ ul.slider li{
 .roadmapContainer{
     display: flex;
 }
-
+.fa-circle{
+    height: 200px;
+}
+.imgCont{
+    display: flex;
+    height: 200px;
+}
+.textCont{
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.column3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column2{
+    display: flex;
+    flex-direction: column;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Negocio */
 /* Negocio */
 /* Negocio */
