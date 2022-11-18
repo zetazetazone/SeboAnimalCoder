@@ -307,18 +307,24 @@ ul.slider li{
 
 .roadmapContainer{
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 .fa-circle{
+    display: flex;
     height: 200px;
+    align-items: center;
 }
 .imgCont{
     display: flex;
     height: 200px;
 }
 .textCont{
+    display: flex;
     height: 200px;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 .column3{
     display: flex;
@@ -328,11 +334,20 @@ ul.slider li{
 .column2{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .column1{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.line{
+    height: 600px;
+    position: absolute;
+    top: 100px;
+    left: 7px;
+    width: 2px;
+    background-color: black;
 }
 /* Negocio */
 /* Negocio */
@@ -351,6 +366,7 @@ ul.slider li{
 .content{
     display: flex;
     align-items: center;
+    padding: 0px 40px 20px 40px;
 }
 
 @media only screen and (max-width: 888px){
@@ -365,7 +381,20 @@ ul.slider li{
     }
     .content{
         display: flex;
-        padding: 0px 40px 20px 40px;
+        padding: 0;
+    }
+    /* .column2{
+        display: none;
+    } */
+    .imgCont{
+        scale: 70%;
+    }
+    .imgCont > img{
+        width: 100%;
+        height: 100%;
+    }
+    .textCont{
+        font-size: 75%;
     }
 }
 
